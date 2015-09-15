@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+kingsmen:
+  title: "Kingsmen"
+  url: https://trello.com
+
+up:
+  title: "Up"
+  url: https://trello.com
