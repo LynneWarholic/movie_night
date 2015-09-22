@@ -9,6 +9,9 @@ class VoteTest < ActiveSupport::TestCase
     assert @vote.valid?
   end
 
+  should belong_to(:event)
+  should belong_to(:movie)
+
 should validate_presence_of(:name)
 
 end

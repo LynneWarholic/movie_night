@@ -10,33 +10,12 @@ class MovieTest < ActiveSupport::TestCase
     assert @movie.valid?
   end
 
+  should belong_to(:event)
+  should have_many(:votes)
+
   should validate_presence_of(:title)
   should validate_presence_of(:url)
 
-  # test 'requires a title' do
-  #   @movie = Movie.new
-  #   @movie.title = 'Big Labowski'
-  #   assert @movie.valid?
-
-  #   @movie.title = nil
-  #   refute @movie.valid?
-
-  #   @movie.title = ''
-  #   refute @movie.valid?
-
-  # end
-
-  # test 'requires a url' do
-  #   @movie = Movie.new
-  #   @movie.url = "www.google.com"
-  #   assert @movie.valid?
-
-  #   @movie.url = nil
-  #   refute @movie.valid?
-
-  #   @movie.url = ''
-  #   refute @movie.valid?
-
-  # end
+  
 
 end
