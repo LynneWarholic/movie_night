@@ -16,6 +16,7 @@ class MovieTest < ActiveSupport::TestCase
   should validate_presence_of(:title)
   should validate_presence_of(:url)
 
-  
+  should validate_presence_of(:event_id)
+
 
 end
