@@ -1,15 +1,13 @@
 require 'test_helper'
 
 class EventTest < ActiveSupport::TestCase
-  def setup
-    @event = events(:january)
-  end
-
   test "has a valid fixture" do
+    @event = events(:january)
     assert @event.valid?
   end
 
   should have_many(:movies)
+
   should have_many(:votes)
 
   should validate_presence_of(:occurs_at)

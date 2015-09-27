@@ -3,9 +3,9 @@
 kingsmen:
   title: "Kingsmen"
   url: https://trello.com
-  event_id: 1
+  event: january
 
 up:
   title: "Up"
   url: https://trello.com
-  event_id: 1
+  event: january
